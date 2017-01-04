@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+
+
+	<extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="fr.inria.sedrennes.samples.category"
+            name="SED Rennes examples"
+            parentCategory="org.eclipse.ui.Examples"/>
+      <wizard
+            canFinishEarly="true"
+            category="org.eclipse.ui.Examples/fr.inria.sedrennes.samples.category"
+            class="fr.inria.sedrennes.sample.deployer.wizards.MyExampleWizard"
+            hasPages="false"
+            icon="icons/newfprj_wiz.gif"
+            id="fr.inria.sedrennes.myexample.wizard"
+            name="My example">
+         <description>
+            T⁮his project contains some FSM models that can be executed if you have installed the LegacyFSM language.
+         </description>
+      </wizard>      
+   </extension>
+ 
+</plugin>
