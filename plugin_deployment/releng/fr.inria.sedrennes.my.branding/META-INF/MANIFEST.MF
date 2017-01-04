@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Branding
+Bundle-SymbolicName: fr.inria.sedrennes.my.branding;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: fr.inria.sedrennes.my.branding.Activator
+Bundle-Vendor: Inria
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

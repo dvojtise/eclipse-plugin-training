@@ -1,0 +1,215 @@
+!SESSION 2017-01-04 11:44:03.810 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho1061732761135213743secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho1061732761135213743secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 11:44:03.810
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE Software being installed: My Application 1.0.0.201701041043 (my_application 1.0.0.201701041043)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins 1.0.0.201701041043 requires 'bundle org.eclipse.equinox.p2.reconciler.dropins 1.1.400.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 11:44:03.810
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE From: My Application 1.0.0.201701041043 (my_application 1.0.0.201701041043)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041043]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 11:44:03.810
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041043
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:44:03.810
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins [1.0.0.201701041043]
+!SESSION 2017-01-04 11:46:44.537 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho2745556670276418247secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho2745556670276418247secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 11:46:44.537
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE Software being installed: My Application 1.0.0.201701041046 (my_application 1.0.0.201701041046)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator 1.0.0.201701041046 requires 'bundle org.eclipse.equinox.simpleconfigurator 1.1.200.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 11:46:44.537
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE From: My Application 1.0.0.201701041046 (my_application 1.0.0.201701041046)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041046]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 11:46:44.537
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041046
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 11:46:44.537
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator [1.0.0.201701041046]
+!SESSION 2017-01-04 16:17:24.577 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho3700410014579497508secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho3700410014579497508secure_storage
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-01-04 16:17:24.577
+!MESSAGE Connection to http://download.eclipse.org/releases/neon/p2.index failed on Permission denied: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Permission denied: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-01-04 16:20:11.324 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho8308200123305126812secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho8308200123305126812secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 16:20:11.324
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE Software being installed: My Application 1.0.0.201701041520 (my_application 1.0.0.201701041520)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator 1.0.0.201701041520 requires 'bundle org.eclipse.equinox.simpleconfigurator 1.1.200.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:20:11.324
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE From: My Application 1.0.0.201701041520 (my_application 1.0.0.201701041520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041520]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:20:11.324
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041520
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:20:11.324
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator [1.0.0.201701041520]
+!SESSION 2017-01-04 16:26:11.785 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho6726547298049249949secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho6726547298049249949secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 16:26:11.785
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE Software being installed: My Application 1.0.0.201701041526 (my_application 1.0.0.201701041526)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator 1.0.0.201701041526 requires 'bundle org.eclipse.equinox.simpleconfigurator 1.1.200.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:26:11.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE From: My Application 1.0.0.201701041526 (my_application 1.0.0.201701041526)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041526]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:26:11.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041526
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:26:11.785
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator [1.0.0.201701041526]
+!SESSION 2017-01-04 16:33:27.014 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho1112772238942649946secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho1112772238942649946secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 16:33:27.014
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE Software being installed: My Application 1.0.0.201701041533 (my_application 1.0.0.201701041533)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator 1.0.0.201701041533 requires 'bundle org.eclipse.equinox.simpleconfigurator 1.1.200.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:33:27.014
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE From: My Application 1.0.0.201701041533 (my_application 1.0.0.201701041533)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041533]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:33:27.014
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041533
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:33:27.014
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator [1.0.0.201701041533]
+!SESSION 2017-01-04 16:43:50.988 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho8915013990583354539secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho8915013990583354539secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 16:43:50.988
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE Software being installed: My Application 1.0.0.201701041543 (my_application 1.0.0.201701041543)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator 1.0.0.201701041543 requires 'bundle org.eclipse.equinox.simpleconfigurator 1.1.200.v20160504-1450' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:43:50.988
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE From: My Application 1.0.0.201701041543 (my_application 1.0.0.201701041543)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041543]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:43:50.988
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041543
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:43:50.988
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator [1.0.0.201701041543]
+!SESSION 2017-01-04 16:52:26.479 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho7371397498946273204secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\dvojtise\AppData\Local\Temp\tycho7371397498946273204secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2017-01-04 16:52:26.479
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE Software being installed: My Application 1.0.0.201701041552 (my_application 1.0.0.201701041552)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE Missing requirement: toolinggtk.linux.x86_64org.eclipse.update.configurator 1.0.0.201701041552 requires 'bundle org.eclipse.update.configurator 3.3.400.v20160506-0750' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:52:26.479
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE From: My Application 1.0.0.201701041552 (my_application 1.0.0.201701041552)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE To: toolingmy_application.configuration [1.0.0.201701041552]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-01-04 16:52:26.479
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE From: toolingmy_application.configuration 1.0.0.201701041552
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-04 16:52:26.479
+!MESSAGE To: toolinggtk.linux.x86_64org.eclipse.update.configurator [1.0.0.201701041552]

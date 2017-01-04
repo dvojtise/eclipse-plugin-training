@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.inria.sedrennes.my</groupId>
+	<artifactId>fr.inria.sedrennes.my.root</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<!-- plugins -->		
+		<module>plugins/fr.inria.sedrennes.myplugin</module>
+		<module>plugins/fr.inria.sedrennes.myplugin.ui</module>
+		<module>releng/fr.inria.sedrennes.my.branding</module>
+		<!-- feature and update site -->
+		<module>releng/fr.inria.sedrennes.my.feature</module>
+		<module>releng/fr.inria.sedrennes.my.updatesite</module>
+		<module>releng/fr.inria.sedrennes.my.product</module>
+	</modules>
+
+	<properties>
+		<tycho-version>0.18.1</tycho-version>
+		<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+       	<repository>
+			<id>Eclipse Kepler</id>
+			<url>http://download.eclipse.org/releases/kepler/</url>
+			<layout>p2</layout>
+		</repository>		
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+		        <groupId>org.eclipse.tycho</groupId>
+		        <artifactId>tycho-versions-plugin</artifactId>
+		        <version>${tycho-version}</version>
+      		</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<!-- environments that will be built -->
+					<environments>
+						<environment><os>linux</os><ws>gtk</ws><arch>x86_64</arch></environment>
+						<environment><os>linux</os><ws>gtk</ws><arch>x86</arch></environment>
+						<environment><os>win32</os><ws>win32</ws><arch>x86</arch></environment>
+						<environment><os>win32</os><ws>win32</ws><arch>x86_64</arch></environment>
+						<environment><os>macosx</os><ws>cocoa</ws><arch>x86_64</arch></environment>
+					</environments>
+				</configuration>
+			</plugin> 
+            <!-- Java compiler plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

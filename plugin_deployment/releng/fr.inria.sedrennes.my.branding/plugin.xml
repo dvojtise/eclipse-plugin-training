@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="my_application"
+         name="My Product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="brandingMy.application"
+            description="%productBlurb"
+            name="%product.name">
+         <property name="aboutText" value="%productBlurb"/>
+         <property name="aboutImage" value="/images/StudioAboutImage.png"/> 
+         <property name="appName" value="DiverSE Studio"/> 
+         <property name="windowImages" value="images/png/IconeGemocStudio_16x16x32.png,images/png/IconeGemocStudio_32x32x32.png,images/png/IconeGemocStudio-text_48x48x32.png,images/png/IconeGemocStudio-text_64x64x32.png,images/png/IconeGemocStudio-text_128x128x32.png,images/png/IconeGemocStudio-text_256x256x32.png"/> 
+          <property name="startupForegroundColor" value="000000"/>
+	      <property name="startupMessageRect" value="8,295,470,15"/>
+	      <property name="startupProgressRect" value="8,310,485,15"/>
+	      <property name="preferenceCustomization" value="plugin_customization.ini"/>
+      </product>
+   </extension>
+
+</plugin>

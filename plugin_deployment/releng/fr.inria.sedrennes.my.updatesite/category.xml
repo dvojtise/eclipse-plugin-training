@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.inria.sedrennes.my.feature_1.0.0.qualifier.jar" id="fr.inria.sedrennes.my.feature" version="1.0.0.qualifier">
+      <category name="my_category"/>
+   </feature>
+   <category-def name="my_category" label="My Category"/>
+</site>
