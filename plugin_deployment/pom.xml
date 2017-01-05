@@ -14,8 +14,11 @@
 		<module>releng/mars</module>
 		<!-- feature and update site -->
 		<module>releng/fr.inria.sedrennes.my.feature</module>
-		<module>releng/fr.inria.sedrennes.my.updatesite</module> <!-- for simple products, update site and product can be merged -->
+		<module>releng/fr.inria.sedrennes.my.updatesite</module> 
 		<module>releng/fr.inria.sedrennes.my.product</module>
+			<!-- for simple products, update site and product can be merged -->
+		<module>releng/fr.inria.sedrennes.my.lite.feature</module> 
+		<module>releng/fr.inria.sedrennes.my.lite.product</module>
 	</modules>
 
 	<properties>

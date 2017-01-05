@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="My Application Lite" uid="my_application_lite" id="fr.inria.sedrennes.my.branding.my_application" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/fr.inria.sedrennes.my.branding/images/StudioAboutImage.png"/>
+      <text>
+         My Application Lite
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>--launcher.XXMaxPermSize 
+256m
+      </programArgs>
+      <vmArgs>-Xms256m
+-Xmx1024m
+-XX:MaxPermSize=256m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_16x16x32.png" i32="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_32x32x32.png" i48="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_48x48x32.png" i64="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_64x64x32.png" i128="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_128x128x32.png"/>
+
+   <splash
+      location="fr.inria.sedrennes.my.branding"
+      startupProgressRect="5,275,445,15" />
+   <launcher name="eclipse">
+      <linux icon="/images/icons/Studio-text/xpm/IconeGemocStudio-text.xpm"/>
+      <macosx icon="/images/icons/Studio-text/icns/IconeGemocStudio-text.icns"/>
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="images/icons/Studio/bmp/IconeGemocStudio_16x16x32.bmp"
+            winSmallLow="images/icons/Studio/bmp/IconeGemocStudio_16x16x8.bmp"
+            winMediumHigh="images/icons/Studio/bmp/IconeGemocStudio_32x32x32.bmp"
+            winMediumLow="images/icons/Studio-text/bmp/IconeGemocStudio-text_32x32x8.bmp"
+            winLargeHigh="images/icons/Studio/bmp/IconeGemocStudio_48x48x32.bmp"
+            winLargeLow="images/icons/Studio-text/bmp/IconeGemocStudio-text_48x48x8.bmp"
+            winExtraLargeHigh="images/icons/Studio/bmp/IconeGemocStudio_256x256x32.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="fr.inria.sedrennes.my.lite.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.platform"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
