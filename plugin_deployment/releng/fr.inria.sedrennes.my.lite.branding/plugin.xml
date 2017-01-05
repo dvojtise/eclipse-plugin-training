@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="my_application"
+         name="My Product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="brandingMy.application"
+            description="%productBlurb"
+            name="%product.name">
+         <property name="aboutText" value="%productBlurb"/>
+         <property name="aboutImage" value="/images/StudioAboutImage.png"/> 
+         <property name="appName" value="DiverSE Studio"/> 
+         <property name="windowImages" value="images/png/IconeGemocStudio_16x16x32.png,images/png/IconeGemocStudio_32x32x32.png,images/png/IconeGemocStudio-text_48x48x32.png,images/png/IconeGemocStudio-text_64x64x32.png,images/png/IconeGemocStudio-text_128x128x32.png,images/png/IconeGemocStudio-text_256x256x32.png"/> 
+          <property name="startupForegroundColor" value="000000"/>
+	      <property name="startupMessageRect" value="8,295,470,15"/>
+	      <property name="startupProgressRect" value="8,310,485,15"/>
+	      <property name="preferenceCustomization" value="plugin_customization.ini"/>
+      </product>
+   </extension>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="fr.inria.sedrennes.my.lite.branding.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="My RCP Perspective"
+            class="fr.inria.sedrennes.my.lite.branding.Perspective"
+            id="fr.inria.sedrennes.my.branding.perspective">
+      </perspective>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="help"
+               label="Help">
+            <command
+                  commandId="example.bundle.commands.sampleCommand"
+                  id="example.bundle.menus.sampleCommand">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.help.aboutAction"
+                  label="About"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="example.bundle.toolbars.sampleToolbar">
+            <command
+                  commandId="example.bundle.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  id="example.bundle.toolbars.sampleCommand"
+                  tooltip="Say hello world">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="example.bundle.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="example.bundle.commands.category"
+            id="example.bundle.commands.sampleCommand"
+            name="Example Bundle Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="example.bundle.handlers.SampleHandler"
+            commandId="example.bundle.commands.sampleCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="example.bundle.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
+      </key>
+   </extension>
+</plugin>

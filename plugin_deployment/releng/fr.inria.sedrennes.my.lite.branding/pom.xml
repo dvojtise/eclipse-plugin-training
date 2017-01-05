@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <relativePath>../../pom.xml</relativePath>
+    <groupId>fr.inria.sedrennes.my</groupId>
+    <artifactId>fr.inria.sedrennes.my.root</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>fr.inria.sedrennes.my.lite.branding</artifactId>
+  <packaging>eclipse-plugin</packaging>
+
+  <scm>
+  	<url>http://127.0.0.1/dummy</url>
+  	<connection>scm:svn:http://127.0.0.1/dummy</connection>
+  	<developerConnection>scm:svn:https://127.0.0.1/dummy</developerConnection>
+  	<tag>HEAD</tag>
+  </scm>
+</project> 

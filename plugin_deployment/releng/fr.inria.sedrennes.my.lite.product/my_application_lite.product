@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="My Application Lite" uid="my_application_lite" id="fr.inria.sedrennes.my.branding.my_application" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="My Application Lite" uid="my_application_lite" id="fr.inria.sedrennes.my.lite.branding.my_application" application="fr.inria.sedrennes.my.lite.branding.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/fr.inria.sedrennes.my.branding/images/StudioAboutImage.png"/>
+      <image path="/fr.inria.sedrennes.my.lite.branding/images/StudioAboutImage.png"/>
       <text>
          My Application Lite
       </text>
@@ -25,10 +25,10 @@
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_16x16x32.png" i32="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_32x32x32.png" i48="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_48x48x32.png" i64="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_64x64x32.png" i128="/fr.inria.sedrennes.my.branding/images/png/IconeGemocStudio_128x128x32.png"/>
+   <windowImages i16="images/png/IconeGemocStudio_16x16x32.png" i32="images/png/IconeGemocStudio_32x32x32.png" i48="images/png/IconeGemocStudio_48x48x32.png" i64="images/png/IconeGemocStudio_64x64x32.png" i128="images/png/IconeGemocStudio_128x128x32.png"/>
 
    <splash
-      location="fr.inria.sedrennes.my.branding"
+      location="fr.inria.sedrennes.my.lite.branding"
       startupProgressRect="5,275,445,15" />
    <launcher name="eclipse">
       <linux icon="/images/icons/Studio-text/xpm/IconeGemocStudio-text.xpm"/>
@@ -46,6 +46,7 @@
       </win>
    </launcher>
 
+
    <vm>
    </vm>
 
@@ -56,7 +57,6 @@
       <feature id="fr.inria.sedrennes.my.lite.feature" version="1.0.0.qualifier"/>
       <feature id="org.eclipse.rcp"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
-      <feature id="org.eclipse.platform"/>
    </features>
 
    <configurations>

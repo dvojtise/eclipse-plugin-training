@@ -16,7 +16,7 @@ Contributors:
 
 	<artifactId>mars</artifactId>
 	<packaging>eclipse-target-definition</packaging>
-	<name>My RCP Target Definition</name>
+	<name>Mars Target Definition</name>
 
 	<parent>
 		<groupId>fr.inria.sedrennes.my</groupId>

@@ -33,7 +33,7 @@
          unpack="false"/>
 
    <plugin
-         id="fr.inria.sedrennes.my.branding"
+         id="fr.inria.sedrennes.my.lite.branding"
          download-size="0"
          install-size="0"
          version="0.0.0"

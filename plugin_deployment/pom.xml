@@ -9,13 +9,16 @@
 		<!-- plugins -->		
 		<module>plugins/fr.inria.sedrennes.myplugin</module>
 		<module>plugins/fr.inria.sedrennes.myplugin.ui</module>
-		<module>releng/fr.inria.sedrennes.my.branding</module>
+		<module>releng/fr.inria.sedrennes.my.branding</module> <!-- branding used to customize a "classic" Eclipse IDE -->
+		<module>releng/fr.inria.sedrennes.my.lite.branding</module> <!-- variant for "Lite" version, deploys an application -->
 		<!-- target platform -->
 		<module>releng/mars</module>
 		<!-- feature and update site -->
+		<!--  We build 3 products : a "small" RCP with update support (called Lite), a standard Eclipse package, a SDK Eclipse package (ie. with support for plugin development) -->
 		<module>releng/fr.inria.sedrennes.my.feature</module>
 		<module>releng/fr.inria.sedrennes.my.updatesite</module> 
-		<module>releng/fr.inria.sedrennes.my.product</module>
+		<module>releng/fr.inria.sedrennes.my.product</module> <!-- "small" eclipse IDE with your plugins -->
+		<module>releng/fr.inria.sedrennes.my.sdk.product</module> <!-- eclipse IDE with your plugins + development environment -->
 			<!-- for simple products, update site and product can be merged -->
 		<module>releng/fr.inria.sedrennes.my.lite.feature</module> 
 		<module>releng/fr.inria.sedrennes.my.lite.product</module>

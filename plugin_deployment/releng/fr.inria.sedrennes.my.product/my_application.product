@@ -6,7 +6,7 @@
    <aboutInfo>
       <image path="/fr.inria.sedrennes.my.branding/images/StudioAboutImage.png"/>
       <text>
-         My Application
+         My Application Lite
       </text>
    </aboutInfo>
 
@@ -54,17 +54,19 @@
 
    <features>
       <feature id="fr.inria.sedrennes.my.feature" version="1.0.0.qualifier"/>
-      <feature id="org.eclipse.sdk" version="0.0.0"/>
+      <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.platform"/>
    </features>
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="org.eclipse.update.reconcile" value="false" />
    </configurations>
 
    <preferencesInfo>
