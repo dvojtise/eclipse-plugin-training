@@ -18,6 +18,10 @@
       [Enter License Description here.]
    </license>
 
+   <requires>
+      <import feature="org.eclipse.sdk" version="4.6.1.v20160907-1200"/>
+   </requires>
+
    <plugin
          id="fr.inria.sedrennes.myplugin"
          download-size="0"

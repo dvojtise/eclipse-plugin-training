@@ -10,23 +10,25 @@
 		<module>plugins/fr.inria.sedrennes.myplugin</module>
 		<module>plugins/fr.inria.sedrennes.myplugin.ui</module>
 		<module>releng/fr.inria.sedrennes.my.branding</module>
+		<!-- target platform -->
+		<module>releng/mars</module>
 		<!-- feature and update site -->
 		<module>releng/fr.inria.sedrennes.my.feature</module>
-		<module>releng/fr.inria.sedrennes.my.updatesite</module>
+		<module>releng/fr.inria.sedrennes.my.updatesite</module> <!-- for simple products, update site and product can be merged -->
 		<module>releng/fr.inria.sedrennes.my.product</module>
 	</modules>
 
 	<properties>
-		<tycho-version>0.18.1</tycho-version>
+		<tycho-version>0.26.0</tycho-version>
 		<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
 	</properties>
 
 	<repositories>
        	<repository>
 			<id>Eclipse Kepler</id>
-			<url>http://download.eclipse.org/releases/kepler/</url>
+			<url>http://download.eclipse.org/releases/mars/</url>
 			<layout>p2</layout>
-		</repository>		
+		</repository> 		
 	</repositories>
 
 	<build>
@@ -47,6 +49,13 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
+					<target>
+						<artifact>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>mars</artifactId>
+							<version>${project.version}</version>
+						</artifact>
+					</target>
 					<!-- environments that will be built -->
 					<environments>
 						<environment><os>linux</os><ws>gtk</ws><arch>x86_64</arch></environment>
