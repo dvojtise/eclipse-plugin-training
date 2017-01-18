@@ -19,7 +19,7 @@
             id="fr.inria.sedrennes.myexample.wizard"
             name="My example">
          <description>
-            T⁮his project contains some FSM models that can be executed if you have installed the LegacyFSM language.
+            T⁮his project contains some sample files.
          </description>
       </wizard>      
    </extension>

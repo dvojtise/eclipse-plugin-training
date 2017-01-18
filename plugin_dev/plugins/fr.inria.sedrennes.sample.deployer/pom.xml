@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+    <properties>
+		<tycho-version>0.26.0</tycho-version>
+        <samples_root>${basedir}/../../samples</samples_root>
+    </properties>
+    
+	<artifactId>fr.inria.sedrennes.sample.deployer</artifactId>
+	<groupId>fr.inria.sedrennes</groupId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-plugin</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.3</version>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<mkdir dir="${basedir}/zips" />
+								<!--  create a zip of the project that will be deployed as a sample -->
+								<zip destfile="${basedir}/zips/fr.inria.sedrennes.samples.zip">
+									<fileset dir="${samples_root}/fr.inria.sedrennes.samples/" />
+								</zip>
+
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+		    	<groupId>org.eclipse.tycho</groupId>
+		        <artifactId>tycho-compiler-plugin</artifactId>
+		        <version>${tycho-version}</version>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+       	<repository>
+			<id>Eclipse Mars</id>
+			<url>http://download.eclipse.org/releases/mars/</url>
+			<layout>p2</layout>
+		</repository> 		
+	</repositories>
+</project> 
+
